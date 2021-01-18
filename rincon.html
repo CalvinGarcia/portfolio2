@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Portfolio </title>
+  <meta charset = "utf-8">
+  <link rel ="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+
+<div class = "container">
+
+  <header>
+
+   <a href= "index.html"> <h1> Calvin Garcia </h1> </a>
+    <nav>
+      <ul>
+        <li><a href ="#">About</a></li> 
+        <li><a href ="#">Contact</a></li> 
+      </ul>
+    </nav>
+  </header>     
+
+<div class = "content-wrapper">
+
+<div class = "slideshow-container">
+
+
+
+  <div class = "mySlides fade">
+
+    <img src ="images/design/poster2.png" style = "width:100%" >
+
+  </div>
+
+    <div class = "mySlides fade">
+
+    <img src ="images/design/poster1.jpg"  style = "width:100%">
+ 
+  </div>
+
+    <div class = "mySlides fade">
+
+    <img src ="images/rincon/rincon_Page_3.png"  style = "width:100%">
+  </div>
+
+
+
+<!--   Next and Previous Buttons -->
+
+
+<a class = "previous" onclick = "plusSlides(-1)">  &#10094 </a>
+<a class = "next" onclick = "plusSlides(1)">   &#10095 </a>
+</div>
+
+
+
+<h1> Description </h1>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec massa vel arcu suscipit ornare. Etiam leo dolor, dignissim vel varius imperdiet, dignissim vitae tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur semper viverra erat, nec tristique ex varius non. Ut sed hendrerit lacus. Maecenas cursus dui nunc, a convallis ipsum sodales consequat. Mauris a felis vel sem tempor viverra eget a nulla. Maecenas ante sem, sollicitudin id euismod sed, sagittis ac est. Vestibulum facilisis augue lectus, non molestie purus egestas in. Vivamus dictum diam ac nulla facilisis ornare.
+  </p>
+
+
+<footer>
+  <p>
+    2020-2021 Calvin Garcia 
+  </p>
+</footer> 
+
+
+<!-- Dots for bottom of carousel. 
+ -->
+<!-- 
+<div style = "text-align:center">
+  <span class = "dot" onclick = "currentSlide(1)"></span>
+  <span class = "dot" onclick = "currentSlide(2)"></span>
+  <span class = "dot" onclick = "currentSlide(3)"></span>
+</div>
+ -->
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n){
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n){
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if( n > slides.length) {slideIndex =1 }
+      if (n < 1){
+        slideIndex = slides.length
+      }
+    for( i = 0; i < slides.length; i++){
+      slides[i].style.display = "none"; 
+    }
+    for (i =0; i < dots.length; i++){
+      dots[i].className = dots[i].className.replace(" active ", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    // dots[slideIndex-1].className += "active";
+
+}
+
+
+
+</script>
+</div>
+</div>
+</body>
+</html>
