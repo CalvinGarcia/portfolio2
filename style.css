@@ -191,10 +191,34 @@ footer{
 
 	.nav-ul{
 		display: none;
-		padding:10px;
-		position:relative;
+	
 		
 	}
+
+	header h1{
+		width:100%;
+	}
+
+	.nav-ul.show{
+		display:flex;
+		flex-flow: column;	
+		width:100%;
+
+
+	}
+
+	.nav-ul nav{
+		margin:20px;
+	
+	}
+
+	.nav-ul li{
+		margin-top:50px;
+	
+	}
+
+
+
 
 	.content h1{
 		margin-left:0;
@@ -206,20 +230,16 @@ footer{
 		margin-right:10px;
 	}
 
-	.nav-ul.show{
-		display:flex;
-		flex-direction: column;	
-		width:100%;
-			}
 
 
 
 	.hamburger{
 		display:block;
 		position:absolute;
-		top:30px;
-		right:30px;
+		top:10px;
+		right:10px;
 		cursor: pointer;
+		margin:15px;
 	}
 
 	.container{
