@@ -231,6 +231,9 @@ footer{
 	}
 
 
+	.content{
+		width:90%;
+	}
 
 
 	.hamburger{
@@ -245,15 +248,19 @@ footer{
 	.container{
 		display:flex;
 		flex-flow:column;
-		grid-template-columns: auto 300px auto;
+		max-width:375px;
+		grid-template-columns: auto 340px auto;
 	
 
 	}
 
 	.layout{
-		display:grid;
+
+		display:flex;
+		flex-flow:column;
+		width:100%;
 		grid-column:2/3;
-		grid-template-columns: auto 300px auto;
+		grid-template-columns: auto auto auto;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr .05fr;
 	}
 
