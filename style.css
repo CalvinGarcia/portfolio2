@@ -56,8 +56,16 @@ nav li{
 }
 
 nav a{
-
+	color:black;
 	text-decoration: none;
+}
+
+nav a:visited{
+	color:black;
+}
+
+nav li a:hover{
+	text-decoration-line: underline;
 }
 
 /*Slide Show Container Styles*/
@@ -67,6 +75,17 @@ nav a{
 	grid-row:1/2;
 	background:red;
 }*/
+
+	.wcontainer{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows:1fr 1fr;
+		grid-gap:10px;
+	}
+
+	.web{
+		text-align:center;
+	}
 
 .content-wrapper{
 	width:960px;
@@ -128,6 +147,21 @@ nav a{
 
 
 
+.content a{
+	text-decoration-line: none;
+	color:black;
+}
+
+.content a:hover{
+	text-decoration-line: underline;
+}
+
+.content a:visited{
+	color:black;
+}
+
+
+
 .content h1{
 	grid-column:1/2;
 	grid-row:2/3;
@@ -137,6 +171,10 @@ nav a{
 	margin-right:25%;
 
 
+}
+
+.contact{
+	margin-left:300px;
 }
 
  .content p{
@@ -187,6 +225,8 @@ footer{
 
 }
 
+/*Mobile Layout*/
+
 @media screen and (max-width:375px){
 
 	.nav-ul{
@@ -219,7 +259,6 @@ footer{
 
 
 
-
 	.content h1{
 		margin-left:0;
 		margin-right:0;
@@ -233,6 +272,10 @@ footer{
 
 	.content{
 		width:90%;
+	}
+
+	.contact{
+		margin-left:20px;
 	}
 
 
